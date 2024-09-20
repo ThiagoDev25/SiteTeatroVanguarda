@@ -1,14 +1,20 @@
 /* Fonts */
 @import url(../css/clash-display.css);
+@import url(../css/wc-mano.css);
+@import url(../css/glacial-indifference.css);
 
 /* Variables */
 :root {
-    -c-dark: #212529;
-    --c-brand: #4e57d4;
-    --c-brand-light: #6970dd;
+    --c-dark: #212529;
+    --c-brand: #d8b801;
+    --c-brand-rgb: 45, 84, 136;
+    --c-background-rgb: rgb(45, 84, 136);
+
+    --c-brand-light: #dfce3c;
     --c-brand-rgb: 78, 87, 212;
     --c-body: #727272;
-    --font-base: "ClashDisplay", sans-serif;
+    --font-base: "wc-mano", sans-serif;
+    --font-text: "glacial-indifference", sans-serif;
     --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
     --transition: all 0.5s ease;
 }
@@ -19,16 +25,29 @@ body {
     color: var(--c-body);
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+#hero h1, .h1 {
+    font-weight: 600;
+    color: var(--c-brand);
+    font-family: var(--font-base);
+
+}
+
+p {
+    font-family: var(--font-text);
+}
+
+h2, h3, h4, h5, h6,
+.h2, .h3, .h4, .h5, .h6 {
     font-weight: 600;
     color: var(--c-dark);
+    font-family: var(--font-text);
 }
 
 a {
     text-decoration: none;
     color: var(--c-brand);
     transition: var(--trasition);
+    font-family: var(--font-text);
 }
 
 a:hover {
@@ -70,10 +89,11 @@ img {
 /* NAVBAR */
 .navbar {
     box-shadow: var(--box-shadow);
+    background-color: #346fbd;
 }
 .navbar-nav .nav-link {
     font-weight: 500;
-    color: var(--c-dark)
+    color: white;
 }
 
 .navbar-nav .nav-link.active {
@@ -87,6 +107,7 @@ img {
     text-transform: uppercase;
     border-radius: 0;
     padding: 10px 24px;
+    font-family: var(--font-text);
 }
 
 .btn-brand {
@@ -103,7 +124,7 @@ img {
 
 /* HERO */
 #hero {
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(../images/imgindex.jpg);
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(../images/bg-image.png);
     background-position: center;
     background-size: cover;
 }
@@ -197,7 +218,7 @@ img {
 
 /* TEAM */
 .team-member-content {
-    background-color: var(--c-brand);
+    background-color: var(--c-background-rgb);
     position: absolute;
     bottom: 24px;
     left: 50%;
