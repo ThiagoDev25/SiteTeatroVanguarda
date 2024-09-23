@@ -91,6 +91,13 @@ img {
     box-shadow: var(--box-shadow);
     background-color: #346fbd;
 }
+
+.navbar-brand {
+    max-width: 4rem;
+}
+.navbar-brand img {
+    max-width: 58%;
+}
 .navbar-nav .nav-link {
     font-weight: 500;
     color: white;
@@ -232,6 +239,11 @@ img {
 .team-member:hover .team-member-content {
     opacity: 1;
     bottom: 24px;
+}
+
+.team-member img {
+    max-height: 356px;
+    max-width: 356px;
 }
 
 /* CONTACT */
