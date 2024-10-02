@@ -247,6 +247,14 @@ img {
 }
 
 /* CONTACT */
+@media screen and (max-width: 510px) {
+    .mapframe {
+        max-width: 14rem;
+        max-height: 12rem;
+        padding-left: 1rem;
+    }
+}
+
 #contact {
     position: relative;
     z-index: 2;
