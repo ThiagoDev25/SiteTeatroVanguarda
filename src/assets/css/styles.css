@@ -15,6 +15,7 @@
     --c-body: #727272;
     --font-base: "wc-mano", sans-serif;
     --font-text: "glacial-indifference", sans-serif;
+    --font-clash: "clash-display", sans-serif;
     --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
     --transition: all 0.5s ease;
 }
@@ -33,7 +34,7 @@ body {
 }
 
 p {
-    font-family: var(--font-text);
+    font-family: var(--font-clash);
 }
 
 h2, h3, h4, h5, h6,
@@ -204,7 +205,7 @@ img {
 
 /* COUNTER */
 #counter {
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(../images/imgindex.jpg);
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(../images/covercounter.png);
 }
 
 /* PORTFOLIO */
@@ -274,7 +275,7 @@ img {
 }
 
 .form-group .form-control {
-    font-family: var(--font-text);
+    font-family: var(--font-clash);
 
 }
 

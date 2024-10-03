@@ -12,8 +12,41 @@
     <link rel="stylesheet" href="../src/assets/css/styles.css" />
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar">
-    <!-- Barra de navegação-->
+    <!--ModalForms-->
+    <div id="JanelaModal" class="modal fade">
 
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header align-items-center">
+            <h3 class="modal-title">Matricular</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAYAAOqALOhUOEk4QTNTUkRSRzE2UjU2UzYwNE4zVTRRUy4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal Images-->
+    <div id="imgmodal" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+            <img src="./assets/images/content/international-summer-dance-school.jpg" alt="image">
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- Barra de navegação-->
     <nav class="navbar navbar-expand-lg  sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -47,11 +80,14 @@
             <li class="nav-item">
               <a class="nav-link" href="#team">Time</a>
             </li>
+            <li class="nav-item"></li>
+              <a class="nav-link" href="#localization">Onde Estamos</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#Contact">Contato</a>
             </li>
           </ul>
-          <a href="#" class="btn btn-brand ms-lg-3">Me Matricular</a>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#JanelaModal" class="btn btn-brand ms-lg-3">Me Matricular</button>
         </div>
       </div>
     </nav>
@@ -65,11 +101,11 @@
               Vanguarda Teatro
             </h1>
             <h5 class="text-white mt-3 mb-4" data-aos="fade-right">
-              We Are the champions in the WORLD MotherFuckers!
+              Somos o melhor estúdio de teatro de Planaltina de Goiás
             </h5>
             <div data-aos="fade-up" data-aos-delay="50">
-              <a href="#" class="btn btn-brand me-2">Matricular</a>
-              <a href="#" class="btn btn-light ms-2">Contato</a>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#JanelaModal" class="btn btn-brand ms-lg-3">Matricular</button>
+              <a href="#localization" class="btn btn-light ms-2">Contato</a>
             </div>
           </div>
         </div>
@@ -178,7 +214,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="450">
-            <div class="service theme-shadow p-lg-5 p-4">
+            <div class="service theme-shadow p-lg-5 p-4 " type="button" data-bs-toggle="modal" data-bs-target="#imgmodal">
               <div class="iconbox">
                 <i class="fa-solid fa-person-running"></i>
               </div>
@@ -328,7 +364,7 @@
       </section>
 
     <!-- Localização -->
-    <section id="about" class="section-padding">
+    <section id="localization" class="section-padding">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
@@ -352,7 +388,7 @@
             <h2 class="display-3 text-center">Contato</h2>
             <p class="whatsapp display-6">
               <i class="fa-brands fa-whatsapp"></i>
-              <a href="https://api.whatsapp.com/send?phone=5561999999999">61 99999-9999</a>
+              <a href="https://api.whatsapp.com/send/?phone=5561999428144&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+os+cursos+da+Vanguarda%21+%EF%BF%BD%EF%BF%BD%EF%BF%BD&type=phone_number&app_absent=0"> (61) 9 9942-8144</a>
             </p>
             <p class="email display-6">
               <i class="fa-solid fa-envelope"></i>
@@ -414,32 +450,30 @@
               <div class="col-lg-3 col-sm-6">
                 <a href="#" class="navbar-brand"><img src="./assets/images/logo.png" alt=""></a>
                 <div class="line"></div>
-                <p>teste de texto para mostrar que realmente tem alg importa, quem lê realmente sai frente</p>
+                <p>O melhor estúdio de Teatro de Planaltina Goiás</p>
                 <div class="social-icons">
-                  <a href="#"><i class="fa-solid fa-users"></i></a>
-                  <a href="#"><i class="fa-solid fa-users"></i></a>
-                  <a href="#"><i class="fa-solid fa-users"></i></a>
-                  <a href="#"><i class="fa-solid fa-users"></i></a>
+                  <a href="https://www.instagram.com/vanguardateatro/"> <img src="./assets/images/icons/instagram.png" alt="Instagram"></a>
+                  <a href="https://api.whatsapp.com/send/?phone=5561999428144&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+os+cursos+da+Vanguarda%21+%EF%BF%BD%EF%BF%BD%EF%BF%BD&type=phone_number&app_absent=0"> <img src="./assets/images/icons/whatsapp.png" alt="Whatsapp"></a>
                 </div>
               </div>
               <div class="col-lg-3 col-sm-6">
-                <h5 class="mb-0 tex-white">Services</h5>
+                <h5 class="mb-0 text-white">Serviços</h5>
                 <div class="line"></div>
                 <ul>
-                  <li><a href="#">UI Design</a></li>
-                  <li><a href="#">UX Design</a></li>
-                  <li><a href="#">Branding</a></li>
-                  <li><a href="#">Logo Designing</a></li>
+                  <li><a href="#services">Cursos</a></li>
+                  <li><a href="https://api.whatsapp.com/send/?phone=5561999428144">Marketing</a></li>
+                  <!-- <li><a href="#services">Branding</a></li>
+                  <li><a href="#services">Logo Designing</a></li> -->
                 </ul>
               </div>
               <div class="col-lg-3 col-sm-6">
-                <h5 class="mb-0 text-white">About Us</h5>
+                <h5 class="mb-0 text-white">Sobre Nós</h5>
                 <div class="line"></div>
                 <ul>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Company</a></li>
-                  <li><a href="#">Career</a></li>
+                  <li><a href="#about">Nossa história</a></li>
+                  <li><a href="#team">Nossa Equipe</a></li>
+                  <!-- <li><a href="#">Company</a></li>
+                  <li><a href="#">Career</a></li> -->
                 </ul>
               </div>
               <div class="col-lg-3 col-sm-6">
@@ -447,8 +481,7 @@
                 <div class="line"></div>
                 <ul>
                   <li><a href="#">Planaltina, Goiás</a></li>
-                  <li><a href="#">(61) 9999-9999</a></li>
-                  <li><a href="#">www.example.com</a></li>
+                  <li><a href="https://api.whatsapp.com/send/?phone=5561999428144&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+os+cursos+da+Vanguarda%21+%EF%BF%BD%EF%BF%BD%EF%BF%BD&type=phone_number&app_absent=0"> (61) 9 9942-8144</a></li>
                 </ul>
               </div>
             </div>
