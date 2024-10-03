@@ -273,6 +273,11 @@ img {
     z-index: -1;
 }
 
+.form-group .form-control {
+    font-family: var(--font-text);
+
+}
+
 #contact .form-control {
     border-radius: 0;
 }
@@ -291,8 +296,16 @@ footer {
     border-bottom: 1px solid rgba(255,255,255,0.1) ;
 }
 
+.footer-top .navbar-brand img {
+    max-width: 30%;
+}
+
+.footer-top .col-lg-3.col-sm-6:first-child {
+    margin-top: 0;
+}
+
 .footer-bottom {
-    padding-bottoma: 40px;
+    padding-bottom: 40px;
     padding-top: 40px;
 }
 
