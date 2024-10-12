@@ -343,3 +343,13 @@ footer .line {
 .social-icons a:hover {
     color: white;
 }
+
+.emailtext {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 449px) {
+    .emailtext {
+        font-size: 1rem;
+    }
+}
